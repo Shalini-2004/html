@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 20px;
+        }
+        .grid{
+            display: grid;
+            width: 800px;
+            border: 2px solid black;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:80px 200px 200px 100px;
+            grid-template-areas:
+            "header header header"
+            "section item-1 item-2"
+            "section item-3 item-3"
+            "footer footer footer"
+            ;
+        }
+        .item-1{
+            grid-area: header;
+            background-color: rgba(152, 66, 179, 0.993);
+        }
+        .item-2{
+            grid-area: section;
+            background-color: rgb(60, 129, 161);
+        }
+        .item-3{
+            grid-area: item-1;
+            background-color: rgb(255, 192, 203);
+        }
+        .item-4{
+            grid-area: item-2;
+            background-color: rgb(233, 121, 16);
+        }
+        .item-5{
+            grid-area: item-3;
+            background-color: rgb(206, 20, 150);
+        }
+        .item-6{
+            grid-area:footer;
+            background-color: rgb(79, 167, 148);
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        .triangle{
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid #555;
+        }
+
+        .trapizoid{
+            height: 0;
+            width: 100px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid green;
+        }
+        .triangle-2{
+            height: 0;
+            width: 0;
+            border-top: 25px solid transparent;
+            border-right: 50px solid pink;
+            border-bottom: 25px solid transparent;
+        }
+        .triangle-3{
+            height: 0;
+            width: 0;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 50px solid purple;
+        }
+        .triangle-4{
+            height: 0;
+            width: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 50px solid red;
+        }
+        .line{
+            display: block;
+            margin: 100px;
+        }
+        .main{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            display: flex;
+            /* align-items: center; */
+            /* flex-wrap: wrap;
+            align-content: center; */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            align-self: center;
+        }
+        a:hover{
+            color: red;
+        }
+
+        p::before{
+            content: "start";
+        }
+        p::first-letter{
+            color: blueviolet;
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="item-1">header</div>
+        <div class="item-2">section</div>
+        <div class="item-3">item-1</div>
+        <div class="item-4">item-2</div>
+        <div class="item-5">item-3</div>
+        <div class="item-6">footer</div>
+    </div>
+
+    <select>
+        <option value="">shalini</option>
+        <option value="">priya</option>
+        <option value="">sana</option>
+        <option value="">area</option>
+        <option value="">apple</option>
+    </select>
+
+    <select >
+        <optgroup label="fruits">
+            <option value="">apple</option>
+            <option value="">banana</option>
+            <option value="">mango</option>
+        </optgroup>
+        <optgroup label="name">
+            <option value="">shalini</option>
+            <option value="">riya</option>
+            <option value="">preeti</option>
+        </optgroup>
+        <optgroup label="colours">
+            <option value="">red</option>
+            <option value="">blue</option>
+            <option value="">yellow</option>
+        </optgroup>
+    </select>
+
+    <div class="box"></div>
+    <div class="triangle"></div>
+    <div class="trapizoid"></div>
+    <div class="triangle-2"></div>
+    <div class="triangle-3"></div>
+    <div class="triangle-4"></div>
+
+    <span class="line">shalini</span>
+
+    <div class="main">
+        <div class="box box1">item-1</div>
+        <div class="box">item-1</div>
+        <div class="box">item-3</div>
+    </div>
+    <a href="https.com">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet, quasi sit iste unde ipsum ipsa voluptas dolorum inventore assumenda esse dicta nemo fugit laboriosam libero. Dolorum laboriosam ab repellat iste neque. Aspernatur, tempore deserunt quo harum repellat voluptatem mollitia, eaque numquam impedit dolores nihil nam facilis eligendi enim esse officiis similique quam architecto. Quidem sed, cupiditate praesentium fuga repellat totam cumque, laboriosam perspiciatis officia aperiam, qui facilis eos nam aut deserunt odit tempora rem non eligendi magnam amet expedita placeat quae architecto! Vel saepe earum rerum sapiente labore voluptates consequuntur fugit a magni nihil, numquam ad nobis laboriosam delectus.</p>
+    
+
+    <!-- 
+
+    html,css
+    inline margen
+    link & href &a
+    specificity
+    doctype what repersent
+    * and body tag
+    dropdown
+    triangle
+    sudo class and sudo element
+    redfild
+    displa-non and visiblity hidden 
+    externsl
+    reset css
+    alin item and ilign self
+    box model
+    radio
+    for and required
+    flex properties
+    element selector
+    flex and grid
+
+    -->
+    
+
+</body>
+</html>
